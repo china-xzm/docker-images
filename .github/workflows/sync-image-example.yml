@@ -31,7 +31,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-        skopeo copy docker://docker.io/userxy2015/ngnix:latest docker://registry.cn-hangzhou.aliyuncs.com/xzm_docker/nginx-image/ngnix:latest
+        skopeo copy docker://docker.io/userxy2015/ngnix:latest docker://registry.cn-hangzhou.aliyuncs.com/ngnix:latest
       continue-on-error: true  # This will allow the workflow to continue even if this step fails
 
     - name: Check if previous step failed
